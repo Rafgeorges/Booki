@@ -9,8 +9,8 @@
     --filter-bg-color: #DEEBFF;
 }
 
-a {text-decoration: none;}
-a:visited {color:black;}
+a {text-decoration: none; color:black;}
+a:visited {text-decoration:none;}
 
 .fa-solid {
     color: var(--main-color);
