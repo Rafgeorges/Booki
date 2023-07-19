@@ -16,12 +16,11 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <header>
+    <header>
             <div class="logo-et-categories">
                 <div class=header-logo-container>
                         <img class ="logo-header-picture"
-                             src="..\images\logo\Booki.png"
+                             src="images\logo\Booki.png"
                             alt="logo-header-booki">
                 </div>
                     <nav>
@@ -44,7 +43,35 @@
                 
             </div>
         </header>
+    <div class="main-container">
+        
         <main>
+            <div class="InfoGroup">
+                <div class="Headline">
+                    <div class="Headtext1">Trouvez votre hébergement pour des vacances de rêve</div>
+                    <div class="Headtext2">En plein centre-ville ou en pleine nature</div>
+                </div>
+                <div class="BarDeRecherche">
+                    <button class="localisation">
+                        <i class="fa-sharp fa-solid fa-location-dot" style="color: #000000; font-size: 18px;"></i>
+                    </button>
+                    <form method="get" action="">
+                        <label for="searchbar"></label><input class="searchtext" type="search" name="searchbar" value="Marseille, France" id="searchbar">
+                    </form>
+                    <button class="searchbutton">Rechercher</button>
+                    
+                </div>
+                <div class="filtres">Filtres
+                    <button class="filtreBoutonEco"><i class="fa-solid fa-money-bill-wave" style="color: #0065FC; font-size: 16.26px;"></i>Économique</button>
+                    <button class="filtreBoutonFam"><i class="fa-solid fa-person" style="color: #0065FC; font-size: 22px;"></i>Familial</button>
+                    <button class="filtreBoutonRom"><i class="fa-solid fa-heart" style="color: #0065FC; font-size: 18.33px;"></i>Romantique</button>
+                    <button class="filtreBoutonPep"><i class="fa-solid fa-fire" style="color: #0065FC; font-size: 20px;"></i>Nos pépites</button>
+                </div>
+                <div class="infobar">
+                    <div class="infopicto" style=""><i class="fa-solid fa-info" style="color: #0065FC;"></i></div>
+                    Plus de 500 logements sont disponibles dans cette ville
+                </div>
+            </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="containertest">

@@ -16,57 +16,29 @@ a:visited {text-decoration:none;}
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
-}
+body {  display: flex;
+        flex-direction: column;
+        margin:auto;
+        max-width: 1440px;}
 
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutralStar {
-    color: var(--main-bg-color)
-}
+    margin:auto;
+    box-sizing: border-box;}
 
 /****** Header ***********/
-.logo-et-categories{
-    height:79px;
-    max-width: 1440px;
-    display: flex;
-    justify-content: space-between;}
+.logo-et-categories{    height:79px;
+                        max-width: 1440px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin:auto;}
 
-.header-logo-container{
-    width: 162px;
-    padding: 30px 50px 30px 50px;
-    gap: 10px;}
+
+.header-logo-container{ width: 162px;
+                        padding: 30px 50px 30px 50px;
+                        gap: 10px;}
     
 
 .logo-header-picture{
@@ -126,6 +98,144 @@ li {font-size: 16px;
 
 
 
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
+/****** Info Group ******/
+
+.InfoGroup{ height:281px;
+            width:1340px;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 200px;}
+
+
+.Headline{  height:53px;;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;}
+
+
+.Headtext1{ font-size: 22px;
+            font-weight: 700;
+            line-height: 25.83px;}
+
+
+.Headtext2{    font-size: 16px;
+                font-weight: 400;
+                line-height:18.78px;
+                height: 19px;}
+
+
+.BarDeRecherche{    display: flex;}
+
+
+.localisation{  width:50px;
+                height:49px;
+                border-radius: 15px 0px 0px 15px;
+                background-color: #F2F2F2;
+                border:1px solid #F2F2F2}
+
+.localisation:hover{background-color: #e0e0e0;}
+.localisation:active{background-color: #c5d9ff;}
+
+
+.searchtext{    font-size:18px;
+                font-weight: 700;
+                line-height: 21.13px;
+                text-align: center;
+                border: 1px solid #F2F2F2;
+                height:49px;}               
+
+
+.searchbutton{  width:132px;
+                height:49px;
+                 border-radius: 0px 15px 15px 0;
+                 background-color: #0065FC;
+                 border:1px solid #0065FC;
+                  font-weight: 700;
+                  font-size: 18px;
+                 color:white;}
+        
+.searchbutton:hover{background-color: #3686ff;}
+.searchbutton:active{background-color: #0251c7;}
+
+
+.filtres{   height:50px;
+            width: 758px;
+            display: flex;
+            align-items: center;
+            gap:15px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 19.96px;}
+
+
+.filtres button{    border:2px solid #D9D9D9;
+                    border-radius: 25px;
+                    background-color: white;
+                    font-size: 17px;
+                    font-weight: 700;
+                    line-height: 19.96px;
+                    display: flex;
+                    gap:10px;
+                    align-items: center;
+                    justify-content: center;}
+.filtres button:hover{  background-color: #DEEBFF;}
+
+
+.filtreBoutonEco{   width:173px;
+                    height:50px;}
+
+.filtreBoutonFam{   width:134px;
+                    height:50px;}
+
+.filtreBoutonRom{   width:170px;
+                    height:50px;}
+
+.filtreBoutonPep{   width:167px;
+                    height:50px;}
+
+
+.infobar{   height:24px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 17.78px;
+            display: flex;
+            align-items: center;
+            gap:10px;}
+
+.infopicto{ border: 1px solid #D9D9D9;
+            border-radius: 50%;
+            font-size:10px;
+            padding:3px 10px;}
 
 
 /****** Hebergements And Populaires ***********/
