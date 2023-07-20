@@ -11,39 +11,53 @@
 
 a {text-decoration: none; color:black;}
 a:visited {text-decoration:none;}
+h2{
+    margin:0px;
+}
+h3{
+    margin:0px;
+}
 
 .fa-solid {
     color: var(--main-color);
 }
 
-body {  display: flex;
-        flex-direction: column;
-        margin:auto;
-        max-width: 1440px;}
+body { 
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    max-width: 1440px;
+}
 
-.main-container {
+.main-container{
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     margin:auto;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 /****** Header ***********/
-.logo-et-categories{    height:79px;
-                        max-width: 1440px;
-                        display: flex;
-                        justify-content: space-between;
-                        margin:auto;}
+.logo-et-categories{   
+    height:79px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+}
 
 
-.header-logo-container{ width: 162px;
-                        padding: 30px 50px 30px 50px;
-                        gap: 10px;}
+.header-logo-container{ 
+    width: 162px;
+    padding: 30px 50px 30px 50px;
+    gap: 10px;
+}
     
 
 .logo-header-picture{
     width: 61px;
-    height: 19px;}
+    height: 19px;
+}
 
 
 nav{
@@ -51,50 +65,71 @@ nav{
     margin: 0;
     width: 328.6px;
     height: 35px;
-    padding: 0px 52px 0px 25px;}
+    padding: 0px 52px 0px 25px;
+}
 
 ul{ 
     display:flex;
     gap:68px;
-    margin:0;}
+    margin:0;
+}
     
 
-.boutonHebergement{ display:flex;}
+.boutonHebergement{
+    display:flex;
+}
 
 .boutonHebergement a{
-            height:35px;
-            width:113px;
-            display: flex;
-            flex-direction: column;
-            gap:14px;}
+    height:35px;
+    width:113px;
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+}
             
 .bluebar{
     background-color: transparent;
-    height:2px;}
+    height:2px;
+}
 
-li a:hover .bluebar{background-color:#0065FC;}
-li a:hover {color:#0065FC;}
+li a:hover .bluebar{
+    background-color:#0065FC;
+}
+li a:hover {
+    color:#0065FC;
+}
 
-li {font-size: 16px;
-    color:black;}
+li {
+    font-size: 16px;
+    color:black;
+}
 
 
 .boutonHebergementText{height: 19px;}
 
 
-.currentlink .boutonHebergementText{color: #0065FC;}
-.currentlink .bluebar{background-color: #0065FC;}
+.currentlink .boutonHebergementText{
+    color: #0065FC;
+}
+.currentlink .bluebar{
+    background-color: #0065FC;
+}
 
 
-.boutonActivite {display:flex;}
+.boutonActivite {
+    display:flex;
+}
 
-.boutonActivite a{  height: 35px;
-                    width: 63px;
-                    display:flex;
-                    flex-direction: column;
-                    gap:14px;}
+.boutonActivite a{  
+    height: 35px;
+    width: 63px;
+    display:flex;
+    flex-direction: column;
+    gap:14px;
+}
 
-.boutonActiviteText{height:19px;}
+.boutonActiviteText{height:19px;
+}
 
 
 
@@ -129,116 +164,159 @@ li {font-size: 16px;
 
 /****** Info Group ******/
 
-.InfoGroup{ height:281px;
-            width:1340px;
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-bottom: 200px;}
+.InfoGroup{
+    height:281px;
+    width:1340px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
 
 
-.Headline{  height:53px;;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;}
+.Headline{
+    height:53px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
-.Headtext1{ font-size: 22px;
-            font-weight: 700;
-            line-height: 25.83px;}
+.Headtext1{ 
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+}
 
 
-.Headtext2{    font-size: 16px;
-                font-weight: 400;
-                line-height:18.78px;
-                height: 19px;}
+.Headtext2{    
+    font-size: 16px;
+    font-weight: 400;
+    line-height:18.78px;
+    height: 19px;
+}
 
 
-.BarDeRecherche{    display: flex;}
+.BarDeRecherche{
+    display: flex;
+}
 
 
-.localisation{  width:50px;
-                height:49px;
-                border-radius: 15px 0px 0px 15px;
-                background-color: #F2F2F2;
-                border:1px solid #F2F2F2}
+.localisation{  
+    width:50px;
+    height:49px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    border:1px solid #F2F2F2
+}
 
-.localisation:hover{background-color: #e0e0e0;}
-.localisation:active{background-color: #c5d9ff;}
-
-
-.searchtext{    font-size:18px;
-                font-weight: 700;
-                line-height: 21.13px;
-                text-align: center;
-                border: 1px solid #F2F2F2;
-                height:49px;}               
-
-
-.searchbutton{  width:132px;
-                height:49px;
-                 border-radius: 0px 15px 15px 0;
-                 background-color: #0065FC;
-                 border:1px solid #0065FC;
-                  font-weight: 700;
-                  font-size: 18px;
-                 color:white;}
+.localisation:hover{
+    background-color: #e0e0e0;
+}
         
-.searchbutton:hover{background-color: #3686ff;}
-.searchbutton:active{background-color: #0251c7;}
+.localisation:active{
+    background-color: #c5d9ff;
+}
 
 
-.filtres{   height:50px;
-            width: 758px;
-            display: flex;
-            align-items: center;
-            gap:15px;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 19.96px;}
+.searchtext{    
+    font-size:18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    text-align: center;
+    border: 1px solid #F2F2F2;
+    height:49px;
+}               
 
 
-.filtres button{    border:2px solid #D9D9D9;
-                    border-radius: 25px;
-                    background-color: white;
-                    font-size: 17px;
-                    font-weight: 700;
-                    line-height: 19.96px;
-                    display: flex;
-                    gap:10px;
-                    align-items: center;
-                    justify-content: center;}
-.filtres button:hover{  background-color: #DEEBFF;}
+.searchbutton{
+    width:132px;
+    height:49px;
+    border-radius: 0px 15px 15px 0;
+    background-color: #0065FC;
+    border:1px solid #0065FC;
+    font-weight: 700;
+    font-size: 18px;
+    color:white;
+}
+.searchbutton:hover{
+    background-color: #3686ff;
+}
+.searchbutton:active{
+    background-color: #0251c7;
+}
 
 
-.filtreBoutonEco{   width:173px;
-                    height:50px;}
+.filtres{
+    height:50px;
+    width: 758px;
+    display: flex;
+    align-items: center;
+    gap:15px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19.96px;
+}
 
-.filtreBoutonFam{   width:134px;
-                    height:50px;}
 
-.filtreBoutonRom{   width:170px;
-                    height:50px;}
+.filtres button{    
+    border:2px solid #D9D9D9;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 19.96px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+.filtres button:hover{  
+    background-color: #DEEBFF;
+}
 
-.filtreBoutonPep{   width:167px;
-                    height:50px;}
+
+.filtreBoutonEco{
+    width:173px;
+    height:50px;
+}
+
+.filtreBoutonFam{   
+    width:134px;
+    height:50px;
+}
+
+.filtreBoutonRom{   
+    width:170px;
+    height:50px;
+}
+
+.filtreBoutonPep{   
+    width:167px;
+    height:50px;
+}
 
 
-.infobar{   height:24px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 17.78px;
-            display: flex;
-            align-items: center;
-            gap:10px;}
+.infobar{   
+    height:24px;            
+    font-weight: 400;        
+    font-size: 16px;
+    line-height: 17.78px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
 
-.infopicto{ border: 1px solid #D9D9D9;
-            border-radius: 50%;
-            font-size:10px;
-            padding:3px 10px;}
+.infopicto{ 
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    font-size:10px;
+    padding:3px 10px;
+}
 
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -254,39 +332,79 @@ li {font-size: 16px;
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-
+    height: 614px;
     font-family: Helvetica;
     font-size: 1.4em;
-    color: white;
-    text-align: center;
+    color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    padding: 30px;
 }
 
-.containertest {
-    display:grid;
-    grid-template : repeat(3, 5em) / repeat(3, 1fr);
-    grid-auto-rows: 5em;
-    grid-gap: 10px;
-
-}
-.containertest div:nth-child(1), div:nth-child(6) {
-    background-color: #B8336A;
+.cardrow{
+    display:flex;
+    gap:30px;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.containertest div:nth-child(2), div:nth-child(7) {
-    background-color: #726DA8;
+
+
+.hebergements .card{
+    width: 30%;
+    height: 197.25px;
 }
 
-.containertest div:nth-child(3), div:nth-child(8) {
-    background-color: #7D8CC4;
+.hebergements .card img{
+    object-fit: cover;
+    width: 100%;
+    height:114px;
+    border-radius: 20px 20px 0px 0px;
 }
 
-.containertest div:nth-child(4) {
-    background-color: #A0D2DB;
+.hebergements .card-content{
+    height: 65.25px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    justify-content: space-between;
+    padding:0px 15px;
 }
 
-.containertest div:nth-child(5) {
-    background-color: #C490D1;
+.hebergements .card-txt{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    justify-content: space-between;
+    height: 64.25px;
 }
+
+.hebergements .card-title{
+    margin:0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+}
+
+.hebergements .card-subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
+    margin:0px;
+}
+
+    .hebergements .card-rating{
+    font-size:13.25px;
+}
+
+.afficher-plus{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    margin:0px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -332,6 +450,50 @@ li {font-size: 16px;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+/***** ACTIVITÉS *****/
+
+.activites{
+    padding:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.activitesrow{ 
+    height:439px;
+    margin-top: 30px;
+    display: flex;
+    gap:30px;
+}
+
+.activitesrow .act-card{
+    height:439px;
+    width: 24%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    display: flex;
+    flex-direction: column;
+}
+
+.activitesrow .act-card img{
+    object-fit: cover;
+    width: 100%;
+    height:380px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activitesrow .act-card-content{
+    padding: 20px 19px 20px 19px;
+}
+
+
+
+
+
+
+
 
 
 
