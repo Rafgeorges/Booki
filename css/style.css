@@ -246,7 +246,6 @@ li {
     display: flex;
     align-items: center;
     gap:15px;
-    outline: 1px solid salmon;
     flex-wrap: wrap;
 }
 
@@ -659,19 +658,6 @@ ul{
     gap:35px;
 }
 
-
-.BarDeRecherche{
-    display: flex;
-}
-
-
-.localisation{  
-    width:50px;
-    height:49px;
-    border-radius: 15px 0px 0px 15px;
-    background-color: #F2F2F2;
-    border:1px solid #F2F2F2
-}
 
 .localisation:hover{
     background-color: #e0e0e0;
