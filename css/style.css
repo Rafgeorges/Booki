@@ -29,6 +29,14 @@ h2{
 h3{
     margin:0px;
 }
+p {
+    margin:0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px; }
+
+
+
 
 .fa-solid {
     color: var(--main-color);
@@ -50,55 +58,61 @@ body {
 }
 
 /****** Header ***********/
-.logo-et-categories{   
-    height:79px;
+.logo-et-categories{ 
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
     margin:auto;
+    margin-bottom: 35px;
 }
 
 
 .header-logo-container{ 
-    width: 162px;
     padding: 30px 50px 30px 50px;
-    gap: 10px;
 }
     
 
-.logo-header-picture{
+.header-logo-picture{
     width: 61px;
     height: 19px;
+    object-fit: contain;
+
 }
 
 
 nav{
-    padding: 0;
-    margin: 0;
-    width: 328.6px;
-    height: 35px;
-    padding: 0px 52px 0px 25px;
+    padding: 0px 25px;
+    box-sizing: border-box;
 }
 
 ul{ 
     display:flex;
+    padding:0;
+    justify-content: space-between;
+    margin: 0px;
     gap:68px;
-    margin:0;
 }
     
 
-.boutonHebergement{
+.headerboutons{
     display:flex;
 }
 
-.boutonHebergement a{
+.headerboutons a{
     height:35px;
-    width:113px;
     display: flex;
     flex-direction: column;
-    gap:14px;
+    gap: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+
 }
-            
+
+.boutonHebergementText{
+    height: 19px;}
+    
+
 .bluebar{
     background-color: transparent;
     height:2px;
@@ -117,7 +131,6 @@ li {
 }
 
 
-.boutonHebergementText{height: 19px;}
 
 
 .currentlink .boutonHebergementText{
@@ -127,20 +140,15 @@ li {
     background-color: #0065FC;
 }
 
-
-.boutonActivite {
-    display:flex;
-}
-
 .boutonActivite a{  
     height: 35px;
-    width: 63px;
     display:flex;
     flex-direction: column;
     gap:14px;
 }
 
-.boutonActiviteText{height:19px;
+.boutonActiviteText{
+    height:19px;
 }
 
 
@@ -151,20 +159,7 @@ li {
     font-size: 22px;
 }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
 
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
 
 .euro {
     font-weight: 700;
@@ -177,29 +172,20 @@ li {
 /****** Info Group ******/
 
 .InfoGroup{
-    height:281px;
-    width:1340px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 40px;
+    gap:35px;
 }
 
 
 .Headline{
-    height:53px;;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap:8px;
 }
 
-
-.Headtext2{    
-    font-size: 16px;
-    font-weight: 400;
-    line-height:18.78px;
-    height: 19px;
-}
 
 
 .BarDeRecherche{
@@ -235,14 +221,11 @@ li {
 
 
 .searchbutton{
-    width:132px;
     height:49px;
     border-radius: 0px 15px 15px 0;
     background-color: #0065FC;
     border:1px solid #0065FC;
-    font-weight: 700;
-    font-size: 18px;
-    color:white;
+    padding: 15px 16px;
 }
 .searchbutton:hover{
     background-color: #3686ff;
@@ -251,14 +234,23 @@ li {
     background-color: #0251c7;
 }
 
+.searchbutton p {font-weight: 700;
+    font-size: 18px;
+    color:white;}
+
+.searchbutton i {
+    display: none;
+}
 
 .filtres{
-    height:50px;
-    width: 758px;
     display: flex;
     align-items: center;
     gap:15px;
+    outline: 1px solid salmon;
+    flex-wrap: wrap;
 }
+
+
 
 
 .filtres button{    
@@ -278,24 +270,9 @@ li {
 }
 
 
-.filtreBoutonEco{
-    width:173px;
-    height:50px;
-}
-
-.filtreBoutonFam{   
-    width:134px;
-    height:50px;
-}
-
-.filtreBoutonRom{   
-    width:170px;
-    height:50px;
-}
-
-.filtreBoutonPep{   
-    width:167px;
-    height:50px;
+.filterButton{
+    padding:10px 19px;
+    display: flex;
 }
 
 
@@ -318,6 +295,24 @@ li {
 
 
 /****** Hebergements And Populaires ***********/
+.card {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    
+}
+
+.card img {
+    object-fit: cover;
+    border:5px solid white;
+    box-sizing: border-box;
+
+}
+
+.card-title {
+    font-size: 16px;
+}
+
 
 .hebergements-and-populaires {
     display: flex;
@@ -356,12 +351,12 @@ li {
 .hebergements .card{
     width: 30%;
     height: 197.25px;
+    padding:0px 0px 15px 0px;
 }
 
 .hebergements .card img{
-    object-fit: cover;
     width: 100%;
-    height:114px;
+    height:124px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -433,11 +428,12 @@ li {
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding: 10px 10px 10px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    outline: 1px solid red;;
 }
 
 .populaires-cards .card-title {
@@ -462,14 +458,12 @@ li {
 }
 
 .activitesrow{ 
-    height:439px;
     margin-top: 30px;
     display: flex;
     gap:30px;
 }
 
 .activitesrow .act-card{
-    height:439px;
     width: 24%;
     box-sizing: border-box;
     background-color: white;
@@ -480,7 +474,7 @@ li {
 }
 
 .activitesrow .act-card img{
-    object-fit: cover;
+    object-fit:cover ;
     width: 100%;
     height:380px;
     border-radius: 20px 20px 0px 0px;
@@ -488,6 +482,8 @@ li {
 
 .activitesrow .act-card-content{
     padding: 20px 19px 20px 19px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
@@ -558,9 +554,168 @@ footer a:hover{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activitesrow .act-card img{
+        height:200px;
+        object-fit: fill;
+        }
+
+    .activitesrow .act-card-content{
+        min-height:30px;
+    }
+
+
+
+
 }
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container{
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 20px;
+        margin:auto;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+
+    /****** Small devices (phones, less than 768px) ----- Header ***********/
+.logo-et-categories{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    margin-bottom: 35px;
+}
+
+
+.header-logo-container{ 
+    padding: 30px ;
+}
+    
+
+.header-logo-picture{
+    width: 61px;
+    height: 19px;
+    object-fit: contain;
+
+}
+
+
+nav{
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+ul{ 
+    display:flex;
+    padding:0;
+    margin: 0px;
+    gap:0px;
+
+   
+}
+    
+
+.headerboutons{
+    display:flex;
+    width: 50%;
+
+}
+
+.headerboutons a{
+    height:35px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 14px;
+    width: 100%;
+    text-align: center;
+
+}
+.bluebar{
+    background-color: #F2F2F2;
+    height:2px;
+}
+
+
+
+
+
+
+
+
+/******Small devices (phones, less than 768px ---- Info Group ******/
+
+.InfoGroup{
+    gap:35px;
+}
+
+
+.BarDeRecherche{
+    display: flex;
+}
+
+
+.localisation{  
+    width:50px;
+    height:49px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    border:1px solid #F2F2F2
+}
+
+.localisation:hover{
+    background-color: #e0e0e0;
+}
+        
+.localisation:active{
+    background-color: #c5d9ff;
+}
+
+
+.searchbutton p { 
+    display:none; 
+}
+.searchbutton i {
+    display:initial;
+}
+
+.filtres h2{margin-right: 600px;
+}
+
+.filtres button{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.44px;
+}
+
+
+
+
+
+.infobar{   
+    height:24px;            
+    font-weight: 400;        
+    font-size: 16px;
+    line-height: 17.78px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.infopicto{ 
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    font-size:10px;
+    padding:3px 10px;
+}
 }
