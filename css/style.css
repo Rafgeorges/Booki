@@ -66,29 +66,12 @@ body {
 }
 
 
-.main-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    max-width: 1440px;
-    padding: 0 50px;
-    margin:auto;
-    box-sizing: border-box;
-    gap:35px;
-}
-
-
-main{
-    display: flex;
-    flex-direction: column;
-    gap:35px;
-}
 
 
 
-/****** Header ***********/
+/****** HEADER ***********/
 
-.logo-et-categories{ 
+.logo-et-menu{ 
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
@@ -97,7 +80,7 @@ main{
 }
 
 
-.header-logo-container{ 
+.logo-container{ 
     padding: 30px 50px 30px 50px;
 }
     
@@ -124,12 +107,12 @@ ul{
 }
     
 
-.headerboutons{
+.menu-btns{
     display:flex;
 }
 
 
-.headerboutons a{
+.menu-btns a{
     height:35px;
     display: flex;
     flex-direction: column;
@@ -138,55 +121,21 @@ ul{
     font-weight: 400;
     line-height: 18.78px;
 }
+li a:hover {color:#0065FC;}
+li a:hover .menu-btns-bluebar{background-color:#0065FC;}
 
-.boutonHebergementText{
+
+.menu-btns-text{
     height: 19px;
 }
-    
+.currentlink .menu-btns-text{color: #0065FC;}    
 
-.bluebar{
+
+.menu-btns-bluebar{
     background-color: transparent;
     height:2px;
 }
-
-
-li a:hover .bluebar{
-    background-color:#0065FC;
-}
-
-
-li a:hover {
-    color:#0065FC;
-}
-
-
-li {
-    font-size: 16px;
-    color:black;
-}
-
-
-.currentlink .boutonHebergementText{
-    color: #0065FC;
-}
-
-
-.currentlink .bluebar{
-    background-color: #0065FC;
-}
-
-
-.boutonActivite a{  
-    height: 35px;
-    display:flex;
-    flex-direction: column;
-    gap:14px;
-}
-
-
-.boutonActiviteText{
-    height:19px;
-}
+.currentlink .menu-btns-bluebar{background-color: #0065FC;}
 
 
 .section-title {
@@ -205,10 +154,28 @@ li {
 }
 
 
+/****** MAIN ******/
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    padding: 0 50px;
+    margin:auto;
+    box-sizing: border-box;
+    gap:35px;
+}
 
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+}
 
-/****** Info Group ******/
+
+/****** INFO GROUP ******/
 
 .InfoGroup{
     display:flex;
@@ -218,28 +185,28 @@ li {
 }
 
 
-.Headline{
+.headlines{
     display: flex;
     flex-direction: column;
     gap:8px;
 }
 
 
-.BarDeRecherche{
+.searchbar-container{
     display: flex;
 }
 
 
-.localisation{  
+.searchbar-loc-btn{  
     width:50px;
     height:49px;
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
     border:1px solid #F2F2F2
 }
-.localisation:hover{
+.searchbar-loc-btn:hover{
     background-color: #e0e0e0;}
-.localisation:active{
+.searchbar-loc-btn:active{
     background-color: #c5d9ff;}
 
 
@@ -254,7 +221,7 @@ li {
 }               
 
 
-.searchbutton{
+.searchbar-search-btn{
     height:49px;
     border-radius: 0px 15px 15px 0;
     background-color: #0065FC;
@@ -264,20 +231,20 @@ li {
     color:white;
     padding: 15px 16px;
 }
-.searchbutton:hover{
+.searchbar-search-btn:hover{
     background-color: #3686ff;}
-.searchbutton:active{
+.searchbar-search-btn:active{
     background-color: #0251c7;}
 
 
-.searchbutton h3 {}
+.searchbar-search-btn h3 {}
 
-.searchbutton i {
+.searchbar-search-btn i {
     display: none;
 }
 
 
-.filtres{
+.filters-container{
     display: flex;
     align-items: center;
     gap:15px;
@@ -285,13 +252,13 @@ li {
 }
  
 
-.filtreRows{
+.filtres-btns-row{
     display: flex;
     gap:15px;
 }
 
 
-.filtres button{    
+.filters-container button{    
     border:2px solid #D9D9D9;
     border-radius: 25px;
 
@@ -307,7 +274,7 @@ li {
 
     padding:12px 19px;
 }
-.filtres button:hover{  
+.filters-container button:hover{  
     background-color: #DEEBFF;}
 
 
@@ -330,7 +297,7 @@ li {
 }
 
 
-/****** Hebergements And Populaires ***********/
+/****** hebergements-container And Populaires ***********/
 .card {
     background-color: white;
     border-radius: 20px;
@@ -349,13 +316,13 @@ li {
 }
 
 
-.hebergements-and-populaires {
+.hebergements-populaires-container {
     display: flex;
     justify-content: space-between;
 }
 
 
-.hebergements-and-populaires section {
+.hebergements-populaires-container section {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -365,8 +332,8 @@ li {
 
 
 
-/****** Hebergements ***********/
-.hebergements {
+/****** hebergements ***********/
+.hebergements-container {
     width: 65%;
     height: 614px;
     font-family: Helvetica;
@@ -390,21 +357,21 @@ li {
     width: 30%;
 }
 
-.hebergements .card{
+.hebergements-container .card{
     width: 100%;
     height: 197.25px;
     padding:0px 0px 15px 0px;
 }
     
 
-.hebergements .card img{
+.hebergements-container .card img{
     width: 100%;
     height:124px;
     border-radius: 20px 20px 0px 0px;
 }
 
 
-.hebergements .card-content{
+.hebergements-container .card-content{
     height: 65.25px;
     display: flex;
     flex-direction: column;
@@ -414,7 +381,7 @@ li {
 }
 
 
-.hebergements .card-txt{
+.hebergements-container .card-txt{
     display:flex;
     flex-direction: column;
     gap:8px;
@@ -423,7 +390,7 @@ li {
 }
 
 
-.hebergements .card-title{
+.hebergements-container .card-title{
     margin:0px;
     font-size: 16px;
     font-weight: 700;
@@ -431,14 +398,14 @@ li {
 }
 
 
-.hebergements .card-subtitle{
+.hebergements-container .card-subtitle{
     font-size: 14px;
     font-weight: 400;
     line-height: 16.44px;
     margin:0px;}
 
 
-.hebergements .card-rating{
+.hebergements-container .card-rating{
     font-size:13.25px;
 }
 
@@ -453,7 +420,7 @@ li {
 
 
 /****** Populaires ***********/
-.populaires {
+.Populaires-container {
     width: 32%;
     display: flex;
     flex-direction: column;
@@ -612,31 +579,31 @@ footer a:hover{
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
    
-.filtres{
+.filters-container{
     flex-direction: column;
     align-items: baseline;
 }
 
 
-.filtres button{
+.filters-container button{
     font-size: 16px;
 }
 
 
-.hebergements-and-populaires {
+.hebergements-populaires-container {
     flex-direction: column;
     gap:50px;
 }
 
 
-.hebergements-and-populaires section{
+.hebergements-populaires-container section{
     padding:30px;
     gap:30px;
     border-radius: 15px;
 }
 
 
-.populaires {
+.Populaires-container {
     width: 100%;
     gap:15px;
 }
@@ -657,7 +624,7 @@ footer a:hover{
 }
 
 
-.hebergements {
+.hebergements-container {
     width: 100%;
     height: auto;
     font-size: 1.4em;
@@ -674,7 +641,7 @@ footer a:hover{
 }
 
 
-.hebergements .card{
+.hebergements-container .card{
     width: 100%;
     height: auto;
     padding:0px 0px 15px 0px;
@@ -702,7 +669,7 @@ height:200px;
     }
 
 
-.logo-et-categories{ 
+.logo-et-menu{ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -711,7 +678,7 @@ height:200px;
 }
 
 
-.header-logo-container{ 
+.logo-container{ 
     padding: 30px ;
 }
     
@@ -737,12 +704,12 @@ ul{
 }
     
 
-.headerboutons{
+.menu-btns{
     display:flex;
     width: 50%;}
 
 
-.headerboutons a{
+.menu-btns a{
     height:35px;
     display: flex;
     flex-direction: column-reverse;
@@ -752,7 +719,7 @@ ul{
 }
 
 
-.bluebar{
+.menu-btns-bluebar{
     background-color: #F2F2F2;
     height:2px;
 }
@@ -764,25 +731,25 @@ ul{
 }
 
 
-.localisation:hover{
+.searchbar-loc-btn:hover{
     background-color: #e0e0e0;}
         
 
-.localisation:active{
+.searchbar-loc-btn:active{
     background-color: #c5d9ff;}
 
 
-.btnRechercher { 
+.searchbar-search-btn-text { 
     display:none
 }
 
 
-.searchbutton i {
+.searchbar-search-btn i {
     display:initial;
 }
 
 
-.filtres{
+.filters-container{
     flex-direction: column;
     display: flex;
     align-items:baseline;
@@ -790,7 +757,7 @@ ul{
     }
 
 
-.filtreRows{
+.filtres-btns-row{
     gap:10px;
     display: flex;
     justify-content: center;
@@ -799,7 +766,7 @@ ul{
 }
 
 
-.filtres button{
+.filters-container button{
     font-size: 14px;
     font-weight: 700;
     line-height: 16.44px;
@@ -826,18 +793,18 @@ ul{
 }
 
 
-.hebergements-and-populaires {
+.hebergements-populaires-container {
     flex-direction: column-reverse;
 }
 
 
-.hebergements-and-populaires section{
+.hebergements-populaires-container section{
     border-radius: 00px;
     padding:30px 20px;
 }
 
 
-.populaires {
+.Populaires-container {
     width: 100%;
     gap:15px;
 }
@@ -855,7 +822,7 @@ ul{
 }
 
 
-.hebergements {
+.hebergements-container {
     width: 100%;
     height: auto;
     font-size: 1.4em;
@@ -879,7 +846,7 @@ ul{
 }
 
 
-.hebergements .card{
+.hebergements-container .card{
     width: 100%;
     height: auto;
     padding:0px 0px 15px 0px;
